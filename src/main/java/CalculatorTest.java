@@ -1,6 +1,3 @@
-package calculatortest;
-
-import calculator.Calculator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,9 +15,9 @@ public class CalculatorTest {
       @Test
     public void addTest() {
         Calculator calculator = new Calculator();
-        int actualResult = calculator.add(-1,2);
+        int actualResult = calculator.add(2,2);
         System.out.println(actualResult);
-        int expectedResult = 1;
+        int expectedResult = 4;
 
         // I want to compare expectedResult vs actualResult to ensure add() method is working
 
@@ -28,26 +25,11 @@ public class CalculatorTest {
 
         System.out.println("expectedResult is equal to actualResult, thus add() method is working good ");
     }
-
-    @Test
-    public void addTestWithNegativeValue() {
-        Calculator calculator = new Calculator();
-        int actualResult = calculator.add(-1,2);
-        System.out.println(actualResult);
-        int expectedResult = 1;
-
-        // I want to compare expectedResult vs actualResult to ensure add() method is working
-
-        Assert.assertEquals(expectedResult, actualResult); //
-
-        System.out.println("expectedResult is equal to actualResult, thus add() method is working good ");
-    }
-
     @Test
     public void deductTest(){
         Calculator calculator = new Calculator();
         int actualResult = calculator.deduct(2,2);
-        Assert.assertEquals(0, actualResult);
+        Assert.assertEquals(1, actualResult);
     }
 
 }
