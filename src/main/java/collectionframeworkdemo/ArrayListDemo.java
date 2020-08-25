@@ -36,11 +36,12 @@ public class ArrayListDemo {
             System.out.println("Element in index " + i + ' ' + studentsIdList.get(i));
         }
 
-       for (Integer x: studentsIdList){
+       /*for (Integer x: studentsIdList){
 
            System.out.println(x);
-       }
+       }*/
 
+        studentsIdList.forEach(x ->  System.out.println(x));
 
     }
 }

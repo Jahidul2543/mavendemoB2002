@@ -25,6 +25,7 @@ public /*final*/ class NokiaPhone extends PreNokia {
         NokiaPhone nokiaPhone = new NokiaPhone();
         nokiaPhone.call();
         nokiaPhone.sendText();
+        nokiaPhone.newIdea();
        int x = nokiaPhone.x;
         System.out.println(x);
     }
